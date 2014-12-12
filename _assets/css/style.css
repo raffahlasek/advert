@@ -605,16 +605,34 @@
 	border:thin solid;
 }
  
- /*===================================== Audience ====================*/
+ /*============ Audience =====*/
   .kotak-audience{
 	padding: 30px 50px 0 50px;
  } 
  .audience-stat{
 	float:left;
 	width: 150px;
-	border:thin solid;
+	border-top:thin solid #d2d2d2;
+	border-bottom:thin solid #d2d2d2;
+	border-right:thin solid #d2d2d2;
 	padding:5px;
+	text-align:center;
 }
+	.nobor{
+		border-right:none;
+	}
+	.as1{
+		padding: 10px 0 20px 0;
+		font-weight:bold;
+	}
+	.as2{
+		font-size:30px;
+	}
+	.as3{
+		padding: 20px 0 10px; 0;
+		color:#424242;
+		font-size:12px;
+	}
  
  .country-table{
 	padding: 10px 10px 10px 0;
@@ -649,13 +667,26 @@
  /*===================================== Coupon Balance ====================*/
 
  .kotak-kupon{
-	padding: 0 50px 0 40px;;
+	padding: 0 50px 0 40px;
+	float:left;
+}
+.nopad{
+	padding-top:20px;
 }
 .kupon-detail{
 	float:left;
 	width: 180px;
-	border:thin solid;
+	text-align:center;
 }
+.kd1{
+	font-weight:bold;
+	font-size:12px;
+	padding-bottom:20px;
+}
+.kd2{
+	font-size:24px;
+}
+
 .kupon-table{
 	padding: 0 50px 10px 0;
 	
