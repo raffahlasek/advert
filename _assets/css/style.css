@@ -67,7 +67,7 @@
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.4);
 }
 
-	/*=========================== Konten kiri ==================================*/
+	/*======= Konten kiri ==========*/
 	.signin {
 		float: left;
 	}
@@ -189,7 +189,7 @@
   		color: #fff;
   	}
 
-  	/*=============================== Kontent Kanan ==================================*/
+  	/*===== Kontent Kanan =====*/
  	.kanan {
   		float: right;
   	}
@@ -218,7 +218,7 @@
 		font-size:14px;
 	}
 
- /*=========================== TEXT BOTTOM =============================*/
+ /*========= TEXT BOTTOM =============*/
  .text-bottom {
  	padding: 40px 80px;
  }
@@ -260,7 +260,7 @@
 	 	text-decoration: none;
 	 	color: #04AAFE;
 	 }
- /*===================================== GET STARTED ====================*/
+ /*========= GET STARTED ==========*/
 
  .text-bottomgs1 {
  	padding: 40px 20px;
@@ -292,7 +292,7 @@
 .bCrAds{
 	font-size:20px;
 }
-/*===================================== why i'ts works ====================*/
+/*========= why i'ts works======*/
 
 .text-bottomww1 {
  	padding: 40px 20px;
@@ -308,7 +308,7 @@
 	.text-bottomww2 p{
 		margin-top:20px;
 	}
- /*===================================== contact us ====================*/
+ /*=========== contact us =================*/
 
 .text-bottomcu1 {
  	padding: 40px 20px;
@@ -324,18 +324,17 @@
 	.text-bottomcu2 p{
 		margin-top:20px;
 	}
- /*===================================== Campaign ====================*/
+ /*========= Campaign ================*/
  .campaignkiri{
 	width:250px;
+	float:left;
 	border-right:thin solid #d2d2d2;
-	float:left
  }
 	.campaignkiri h3{
 		padding:10px;
 		color:#a2a2a2;
-		
-		
 	}
+
 .profile{
 	border-bottom:thin solid #d2d2d2;
 	float:left;
@@ -402,7 +401,8 @@
 	}
  .campaignkanan{
 	float:right;
-	width:749px;
+	width:748px;
+	border-left:thin solid #d2d2d2;
  }
  .kotakkanan{
 	border-bottom:thin solid #d2d2d2;
@@ -474,11 +474,200 @@
 }
 .resumetbl table thead{
 	background-color:#d2d2d2;
-	border:thin solid #121212;
+	
 }
 .resumetbl table tr td{
 	padding: 2px 2px;
 	font-size:12px;
+	border:thin solid;
+}
+
+/*========report =========*/
+
+.kotakkanan2 {
+	padding:40px 10px;;
+	border-bottom:thin solid #d2d2d2;
+}
+
+	.kotakkanan2 p{
+		margin: 10px 36px;
+	}
+	.kotakkanan2 h3{
+		margin-left:35px;
+	}
+.text-kanan{
+	font-weight:bold;
+	position: absolute;
+    left: 480px;
+    top: 98px;
+}
+
+.kotakkanan3 {
+	padding:40px 120px;;
+	
+}
+
+.kotakkanan4 {
+	padding:20px 10px;
+}
+
+.report-table{
+	float:right;
+	width:530px;
+}
+.report-table table thead{
+	background-color:#d2d2d2;
+
+}
+.report-table table tr td{
+	padding: 2px 2px;
+	font-size:12px;
+	border:thin solid;
+}
+
+.report-about{
+	float:left;
+	width:180px;
+}
+
+.report-about p{
+	margin:10px 0;
+}
+
+.form-control {
+  height: 24px;
+  padding: 2px 4px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+ 
+ /*========Billing =========*/
+ 
+ .kotak-billing{
+	padding: 30px 50px 10px 50px;
+ }
+ 
+ .kotak-billing h3{
+	margin-bottom:10px;
+ }
+ 
+ .accspent{
+	float:left;
+	width:200px;	
+ }
+	.accspent div{
+		margin-top:5px;
+	}
+ .budget{
+	float:left;
+	width:200px;
+ }
+	.budget div{
+		margin-top:5px;
+	}
+ .billing-table{
+	padding: 0 50px 10px 40px;
+	
+}
+.billing-table table thead{
+	background-color:#d2d2d2;
+
+}
+.billing-table table tr td{
+	padding: 2px 2px;
+	font-size:12px;
+	border:thin solid;
+}
+ 
+ /*===================================== Audience ====================*/
+  .kotak-audience{
+	padding: 30px 50px 0 50px;
+ } 
+ .audience-stat{
+	float:left;
+	width: 150px;
+	border:thin solid;
+	padding:5px;
+}
+ 
+ .country-table{
+	padding: 10px 10px 10px 0;
+	float:left;
+	width:289px;
+}
+.country-table table thead{
+	background-color:#d2d2d2;
+}
+.country-table table tr td{
+	padding: 2px 2px;
+	font-size:12px;
+	border:thin solid;
+	
+}
+
+.city-table{
+	padding: 10px 50px 10px 5px;
+	float:left;
+	width:289px;
+	
+}
+.city-table table thead{
+	background-color:#d2d2d2;
+}
+.city-table table tr td{
+	padding: 2px 2px;
+	font-size:12px;
+	border:thin solid;
+}
+
+ /*===================================== Coupon Balance ====================*/
+
+ .kotak-kupon{
+	padding: 0 50px 0 40px;;
+}
+.kupon-detail{
+	float:left;
+	width: 180px;
+	border:thin solid;
+}
+.kupon-table{
+	padding: 0 50px 10px 0;
+	
+}
+.kupon-table table thead{
+	background-color:#d2d2d2;
+
+}
+.kupon-table table tr td{
+	padding: 2px 2px;
+	font-size:12px;
+	border:thin solid;
 }
  /*===================================== FOOTER ====================*/
  .footer {
