@@ -328,7 +328,7 @@
  .campaignkiri{
 	width:250px;
 	float:left;
-	border-right:thin solid #d2d2d2;
+	//border-right:thin solid #d2d2d2;
  }
 	.campaignkiri h3{
 		padding:10px;
@@ -401,7 +401,7 @@
 	}
  .campaignkanan{
 	float:right;
-	width:748px;
+	width:749px;
 	border-left:thin solid #d2d2d2;
  }
  .kotakkanan{
@@ -470,7 +470,7 @@
 	font-size:12px;
 }
 .resumetbl{
-	margin:10px;
+	margin:10px 0 150px 10px;
 }
 .resumetbl table thead{
 	background-color:#d2d2d2;
