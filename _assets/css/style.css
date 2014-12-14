@@ -42,6 +42,10 @@
 		background-repeat: repeat-x;
 	}
 
+	.menu-selected a{
+		font-weight: bold;
+	}
+
 	.menu > li {
 		list-style: none;
 		display: inline;
@@ -362,11 +366,16 @@
 		font-weight:bold;
 	}
  .campaignmenu{
-	padding:10px;
+	padding:10px 0px;
 	border-bottom:thin solid #d2d2d2;
  }
 	 .campaignmenu ul li {
-		padding:10px;
+		padding-top:15px;
+		padding-bottom:15px;
+		padding-left:15px;
+	}
+	.campaignmenu ul li:hover {
+		background-color: #E6E6E6;
 	}
 	.campaignmenu ul li > a {
 		text-decoration:none;
@@ -375,36 +384,75 @@
 		
 	 }
 	 .mca{
-		background: url('../img/createads.jpg') no-repeat;	
+		background: url('../img/createads.jpg') no-repeat;
+		background-position: 10px 5px;	
 	 }
 
 	 .mc{
-		background: url('../img/campaign.jpg') no-repeat;	
+		background: url('../img/campaign.jpg') no-repeat;
+		background-position: 10px 5px;	
 	 }
 
 	 .mr{
 		background: url('../img/report.jpg') no-repeat;	
+		background-position: 10px 5px;
 	 }
 
 	 .mbi{
-		background: url('../img/billing.jpg') no-repeat;	
+		background: url('../img/billing.jpg') no-repeat;
+		background-position: 10px 5px;	
 	 }
 
 	 .mau{
-		background: url('../img/audience.jpg') no-repeat;	
+		background: url('../img/audience.jpg') no-repeat;
+		background-position: 10px 5px;	
 	 }
 
 	 .mhc{
 		background: url('../img/help.jpg') no-repeat;	
+		background-position: 10px 10px;
+	 }
+	 .helpcenter{
+	 	height:46px;
+	 	width:inherit;
+	 	border-top: solid 1px #D6D6D6;
+	 }
+	 .helpcenter a{
+	 	margin: -50px 0 0 40px;
+	 	text-decoration: none;
+	 	color:#000;
+	 }
+	 .helpcenter div{
+	 	margin: -4px 0 0 55px;
+	 	padding-top: 8px;
 	 }
  .updateinfo{
-	
+	margin-top:-30px;
+	overflow: auto;
  }
  .updateinfo ul{
 	margin:10px;
 }
 	.updateinfo ul li{
-		list-style-type:square;
+		padding:20px 0;
+	}
+	.updateinfo ul li a{
+		color: #000;
+	}
+	.updateinfo-div{
+		padding: 10px 0;
+		width:inherit;
+	}
+	.updateinfo .info-keterangan{
+		float:left;
+		padding: 10px 0;
+		width:180px;
+	}
+	.updateinfo .info-jam{
+		float:left;
+		padding:10px 0;
+		width:50px;
+		font-size:10px;
 	}
  .campaignkanan{
 	float:right;
@@ -432,6 +480,7 @@
  }
  .btncmpgn{
 	margin-top:15px;
+	margin-right: 35px;
 	float:right;
  }
  .konten-notif{
@@ -464,11 +513,12 @@
  .sumbill table tr td{
 	padding-right:20px;
 	font-weight:bold;
-	border: 1px solid #000;
  }
  .sumbill-td-left{
  	width:60px;
  	color: grey;
+ 	text-align: center;
+ 	padding:2px 0;
  }
  .detbill{
 	padding:5px;10px;
@@ -501,17 +551,34 @@
 .resumetbl{
 	margin:10px;
 }
+.resumetbl table{
+	width:725px;
+}
 .resumetbl table thead{
-	background-color:#d2d2d2;
-	
+	background-color:#8DC6DA;
+	font-weight: bold;
 }
 .resumetbl table tr td{
 	padding: 2px 2px;
 	font-size:12px;
 	border:thin solid;
 }
+.resumetbl table tbody{
+	font-weight: bold;
+}
+.resumetbl .campaign-name a{
+	text-decoration: none;
+	color: blue;
+	font-weight: normal;
+}
+.resumetbl .icon-active{
+	padding-left: 15px;
+	background-image: url("../img/icon-active.PNG");
+	background-repeat: no-repeat;
+	background-position: 0px -1px;
+}
 
-/*========report =========*/
+/*======== report =========*/
 
 .kotakkanan2 {
 	padding:40px 10px;;
@@ -764,8 +831,25 @@
 		font-size: 14px;
 	}
 
-/* General Styles */
+/********** General Styles **********/
 
 .bold{
 	font-weight: bold;
 }
+
+/********** Decoration **********/
+
+.shadow-top{
+/*	width: inherit;
+	height:1px;
+	margin-top:-2px;
+	box-shadow: 1px 3px 6px 2px #E6E6E6;*/
+	background-image: url("../img/shadow1px.PNG");
+	background-repeat: repeat-x;
+}
+.shadow-top img{
+/*	float:right;
+	margin-top:1px;*/
+	float:right;
+}
+

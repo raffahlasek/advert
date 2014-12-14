@@ -31,6 +31,9 @@
 		<!-- content -->
 		<!--Kontent Kiri-->
 		<div class="campaignkiri">
+			<!-- Dekorasi shadow -->
+			<div class="shadow-top">&nbsp;</div>
+
 			<h3>Account</h3>
 			<div class="profile">
 				<div class="foto"><img src="_assets\img\raffah.jpeg" /></div>
@@ -53,25 +56,87 @@
 					</li>
 					<li class="mau">
 						<a href="#">Audience</a>
-					</li>
-					<li class="mhc">
-						<a href="#">Help Center</a>
 					</li>			
 				</ul>
+
+				<!-- START Help Center -->
+				<div class="mhc helpcenter" style="">
+					<a href="">
+						<div>Help Center</div>
+					</a>
+				</div>
+				<!-- END Help Center -->
+
 			</div>
+
 			<h3>Update Info</h3>
 			<div class="updateinfo">
 				<ul>
-					<li>Kesalahan 1</li>
-					<li>Transaksi 1 berhasil</li>
-					<li>Transaksi 2 berhasil</li>
-					<li>Transaksi 3 berhasil</li>
+					<li>
+						<div class="update-info-item">
+							<div class="info-keterangan">
+								Kesalahan pada div pada tanggal Kesalahan pada div Kesalahan pada div
+							</div>
+							<div class="info-jam bold">
+								1 Hr Ago
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="update-info-item">
+							<div class="info-keterangan">
+								Kesalahan Teknis Pemasangan Iklan Sudah Diperbaiki
+							</div>
+							<div class="info-jam bold">
+								1 Hr Ago
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="update-info-item">
+							<div class="info-keterangan">
+								Transaksi Anda56-87-352 Berhasil No. Ref. 34
+							</div>
+							<div class="info-jam bold">
+								3 Hr Ago
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="update-info-item">
+							<div class="info-keterangan">
+								Kesalahan Teknis Pemasangan Iklan Sudah Diperbaiki
+							</div>
+							<div class="info-jam bold">
+								4 Hr Ago
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<a href="">
+							<div class="update-info-item">
+								<div class="info-keterangan">
+									Transaksi Anda Berhasil No. ref 1404-31-577
+								</div>
+								<div class="info-jam bold">
+									1 Day Ago
+								</div>
+							</div>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 		
 		<!--campaign kanan-->
 		<div class="campaignkanan">
+			<!-- Dekorasi Shadow & lipatan -->
+			<div class="shadow-top">&nbsp;<img src="_assets/img/dec-folding.PNG"></div>
+
 			<!--after sign in : merupakan resume dari advert-->
 			<div class="kotakkanan">
 				<div class="notif">
@@ -82,7 +147,7 @@
 				</div>
 				<div class="btngreen btncmpgn">Create Ads</div>
 				<div class="clear"></div>
-				
+				 
 				<div class="konten-notif">
 					<div class="sumnotif">
 						<div class="detnotif bold">Notification</div>
@@ -132,7 +197,7 @@
 				<table>
 					<thead>
 						<tr>
-							<td><input type="checkbox" /></td>
+							<td><input type="checkbox" disabled /></td>
 							<td>Status</td>
 							<td>Campaign Name</td>
 							<td>Delivery</td>
@@ -145,32 +210,68 @@
 							<td>End Date</td>
 						</tr>
 					</thead>
-					<tr>
-						<td><input type="checkbox" /></td>
-						<td>on/off</td>
-						<td>Campaign Name</td>
-						<td>Delivery</td>
-						<td>213</td>
-						<td>21.000</td>
-						<td>Cost</td>
-						<td>15.123</td>
-						<td>99.000</td>
-						<td>25-08-2014</td>
-						<td>25-09-2014</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" /></td>
-						<td>on/off</td>
-						<td>Campaign Name</td>
-						<td>Delivery</td>
-						<td>Click</td>
-						<td>Impression</td>
-						<td>Cost</td>
-						<td>Spent Today</td>
-						<td>Total Spent</td>
-						<td>Start Date</td>
-						<td>End Date</td>
-					</tr>
+					<tbody>	
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>on/off</td>
+							<td class="campaign-name">
+								<a href="">Campaign Name</a>
+							</td>
+							<td><div class="icon-active">Active</div></td>
+							<td>213</td>
+							<td>21.000</td>
+							<td>1.000</td>
+							<td>15.123</td>
+							<td>99.000</td>
+							<td>25-08-2014</td>
+							<td>25-09-2014</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>on/off</td>
+							<td class="campaign-name">
+								<a href="">Campaign Name</a>
+							</td>
+							<td><div class="icon-active">Active</div></td>
+							<td>18</td>
+							<td>3.435</td>
+							<td>2.014</td>
+							<td>102</td>
+							<td>434</td>
+							<td>10-03-2014</td>
+							<td>Ongoing</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>on/off</td>
+							<td class="campaign-name">
+								<a href="">Campaign Name</a>
+							</td>
+							<td><div class="icon-active">Active</div></td>
+							<td>18</td>
+							<td>3.435</td>
+							<td>2.014</td>
+							<td>102</td>
+							<td>434</td>
+							<td>10-03-2014</td>
+							<td>Ongoing</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" /></td>
+							<td>on/off</td>
+							<td class="campaign-name">
+								<a href="">Campaign Name</a>
+							</td>
+							<td><div class="icon-active">Active</div></td>
+							<td>18</td>
+							<td>3.435</td>
+							<td>2.014</td>
+							<td>102</td>
+							<td>434</td>
+							<td>10-03-2014</td>
+							<td>Ongoing</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 			
