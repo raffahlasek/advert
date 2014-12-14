@@ -391,12 +391,12 @@
 		color:black;
 	 }
 	 .mca{
-		background: url('../img/createads.png') no-repeat;
+		background: url('../img/createads.PNG') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mc{
-		background: url('../img/campaign.png') no-repeat;
+		background: url('../img/campaign.PNG') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
@@ -406,17 +406,17 @@
 	 }
 
 	 .mbi{
-		background: url('../img/billing.png') no-repeat;
+		background: url('../img/billing.PNG') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mau{
-		background: url('../img/audience.png') no-repeat;
+		background: url('../img/audience.PNG') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mhc{
-		background: url('../img/help.png') no-repeat;	
+		background: url('../img/help.PNG') no-repeat;	
 		background-position: 10px 10px;
 	 }
 	 .helpcenter{
@@ -569,25 +569,25 @@
 	}
 		.btn-paging .btn-paging-prev{
 			float:left;
-			background-image:url("../img/btn-prev.PNG");
+			background-image:url("../img/btn-prev.PNG"); 
 			width:36px;
 			height:18px;
 		}
 		.page .btn-paging .btn-paging-prevend{
 			float:left;
-			background-image:url("../img/btn-prev-end.PNG");
+			background-image:url("../img/btn-prev-end.PNG"); 
 			width:36px;
 			height:18px;
 		}
 		.page .btn-paging .btn-paging-next{
 			float:left;
-			background-image:url("../img/btn-next.PNG");
+			background-image:url("../img/btn-next.PNG"); 
 			width:36px;
 			height:18px;
 		}
 		.page .btn-paging .btn-paging-nextend{
 			float:left;
-			background-image:url("../img/btn-next-end.PNG");
+			background-image:url("../img/btn-next-end.PNG"); 
 			width:36px;
 			height:18px;
 		}
