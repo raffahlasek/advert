@@ -366,14 +366,22 @@
 		font-weight:bold;
 	}
  .campaignmenu{
-	padding:10px 0px;
+//	padding:10px 0px;
 	border-bottom:thin solid #d2d2d2;
  }
-	 .campaignmenu ul li {
+ 	.campaignmenu ul:first-child {
+		padding-top:10px;
+	}
+	.campaignmenu ul li {
 		padding-top:15px;
 		padding-bottom:15px;
-		padding-left:15px;
+	//	padding-left:15px;
+		padding-left:50px;
 	}
+	.campaignmenu ul a {
+		text-decoration:none;
+		color:black;
+	 }
 	.campaignmenu ul li:hover {
 		background-color: #E6E6E6;
 	}
@@ -381,41 +389,41 @@
 		text-decoration:none;
 		margin: 30px 0 0 40px;
 		color:black;
-		
 	 }
 	 .mca{
-		background: url('../img/createads.jpg') no-repeat;
+		background: url('../img/createads.png') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mc{
-		background: url('../img/campaign.jpg') no-repeat;
+		background: url('../img/campaign.png') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mr{
-		background: url('../img/report.jpg') no-repeat;	
+		background: url('../img/report.png') no-repeat;	
 		background-position: 10px 5px;
 	 }
 
 	 .mbi{
-		background: url('../img/billing.jpg') no-repeat;
+		background: url('../img/billing.png') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mau{
-		background: url('../img/audience.jpg') no-repeat;
+		background: url('../img/audience.png') no-repeat;
 		background-position: 10px 5px;	
 	 }
 
 	 .mhc{
-		background: url('../img/help.jpg') no-repeat;	
+		background: url('../img/help.png') no-repeat;	
 		background-position: 10px 10px;
 	 }
 	 .helpcenter{
 	 	height:46px;
 	 	width:inherit;
 	 	border-top: solid 1px #D6D6D6;
+	 	padding-bottom: 10px;
 	 }
 	 .helpcenter a{
 	 	margin: -50px 0 0 40px;
@@ -426,12 +434,16 @@
 	 	margin: -4px 0 0 55px;
 	 	padding-top: 8px;
 	 }
+	 .helpcenter:hover{
+	 	background-color: #E6E6E6;
+	 }
  .updateinfo{
 	margin-top:-30px;
 	overflow: auto;
  }
  .updateinfo ul{
 	margin:10px;
+	list-style: none;
 }
 	.updateinfo ul li{
 		padding:20px 0;
@@ -532,6 +544,7 @@
  .isinotif h2{
 	font-size:10px;
 	margin-top:10px;
+	color:grey;
  }
  .isinotif ul{
 	margin-left:17px;
@@ -544,28 +557,74 @@
 	text-decoration: none;
 } 
 .page{
-	margin: 20px 10px 10px 0;
 	float:right;
-	font-size:12px;
+	margin: 20px 10px 10px 0;
+	color: #A6A6A6;
+	font-size:10px;
 }
+	.page .btn-paging{
+		float:right;
+		padding-left: 10px;
+		margin-top: -3px;
+	}
+		.btn-paging .btn-paging-prev{
+			float:left;
+			background-image:url("../img/btn-prev.PNG");
+			width:36px;
+			height:18px;
+		}
+		.page .btn-paging .btn-paging-prevend{
+			float:left;
+			background-image:url("../img/btn-prev-end.PNG");
+			width:36px;
+			height:18px;
+		}
+		.page .btn-paging .btn-paging-next{
+			float:left;
+			background-image:url("../img/btn-next.PNG");
+			width:36px;
+			height:18px;
+		}
+		.page .btn-paging .btn-paging-nextend{
+			float:left;
+			background-image:url("../img/btn-next-end.PNG");
+			width:36px;
+			height:18px;
+		}
 .resumetbl{
 	margin:10px;
 }
 .resumetbl table{
 	width:725px;
+	border:solid 1px #A6A6A6;
 }
 .resumetbl table thead{
 	background-color:#8DC6DA;
 	font-weight: bold;
 }
+.resumetbl table thead span{
+	font-size: 10px;
+}
+.resumetbl table thead td{
+	border:solid 1px #A6A6A6;
+	font-size: 11px;
+}
 .resumetbl table tr td{
 	padding: 2px 2px;
-	font-size:12px;
-	border:thin solid;
+}
+.resumetbl .even{
+	background-color: #E6E6E6;
 }
 .resumetbl table tbody{
 	font-weight: bold;
 }
+	.resumetbl table tbody tr td:first-child{
+		padding: 10px 0;
+	}
+	.resumetbl table tbody tr td{
+		padding: 5px 0;
+		font-size: 10px;
+	}
 .resumetbl .campaign-name a{
 	text-decoration: none;
 	color: blue;
@@ -577,6 +636,71 @@
 	background-repeat: no-repeat;
 	background-position: 0px -1px;
 }
+.resumetbl .icon-inactive{
+	padding-left: 15px;
+	background-image: url("../img/icon-inactive.PNG");
+	background-repeat: no-repeat;
+	background-position: 0px -1px;
+}
+.resumetbl .startdate-detail{
+	font-size: 10px;
+	color:#A6A6A6;
+}
+.resumetbl .spent-detail{
+	font-size: 8px;
+	color:#A6A6A6;
+}
+
+/* START Switch Button */
+.onoffswitch {
+    position: relative; width: 40px;
+    margin-bottom: -5px;
+	margin-left: 4px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #C7E59E; border-radius: 50px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 14px; padding: 0; line-height: 14px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "|";
+    padding-left: 10px;
+    background-color: #93D049; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "|";
+    padding-right: 10px;
+    background-color: #FFFFFF; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 12px; margin: 1px;
+    background: #FFFFFF;
+    border: 2px solid #C7E59E; border-radius: 50px;
+    position: absolute; top: 0; bottom: 0; right: 22px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+/* END Switch Button */
 
 /*======== report =========*/
 

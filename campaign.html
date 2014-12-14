@@ -42,26 +42,36 @@
 			<div class="clear"></div>
 			<div class="campaignmenu">
 				<ul>
-					<li class="mca">
-						<a href="#">Create Ads</a>
-					</li>
-					<li class="mc">
-						<a href="#">Campaign</a>
-					</li>
-					<li class="mr">
-						<a href="#">Report</a>
-					</li>
-					<li class="mbi">
-						<a href="#">Billing</a>
-					</li>
-					<li class="mau">
-						<a href="#">Audience</a>
-					</li>			
+					<a href="#">
+						<li class="mca">
+							Create Ads
+						</li>
+					</a>
+					<a href="#">
+						<li class="mc">
+							Campaign
+						</li>
+					</a>
+					<a href="#">
+						<li class="mr">
+							Report
+						</li>
+					</a>
+					<a href="#">
+						<li class="mbi">
+							Billing
+						</li>
+					</a>
+					<a href="#">
+						<li class="mau">
+							Audience
+						</li>			
+					</a>
 				</ul>
 
 				<!-- START Help Center -->
 				<div class="mhc helpcenter" style="">
-					<a href="">
+					<a href="#">
 						<div>Help Center</div>
 					</a>
 				</div>
@@ -190,7 +200,11 @@
 			
 			<!--tabel resume advert-->
 			<div class="page">
-				1-50 of 487 result
+				1-50 of 487 result(s) 
+				<div class="btn-paging">
+					<a href=""><div class="btn-paging-prevend"></div></a> <!-- Page ada di halaman pertama, Ganti class dengan 'btn-paging-prev' jika bukan dihalaman pertama -->
+					<a href=""><div class="btn-paging-next"></div></a> <!-- Page ada di halaman terakhir, Ganti class dengan 'btn-paging-nextend' jika page dihalaman terakhir -->
+				</div>
 			</div>
 			<div class="clear"></div>
 			<div class="resumetbl">
@@ -198,77 +212,109 @@
 					<thead>
 						<tr>
 							<td><input type="checkbox" disabled /></td>
-							<td>Status</td>
-							<td>Campaign Name</td>
-							<td>Delivery</td>
-							<td>Click</td>
-							<td>Impression</td>
-							<td>Cost</td>
-							<td>Spent Today</td>
-							<td>Total Spent</td>
-							<td>Start Date</td>
-							<td>End Date</td>
+							<td>Status <span>?</span></td>
+							<td style="width: 110px;padding-right:5px;">Campaign Name <span>?</span></td>
+							<td>Delivery <span>?</span></td>
+							<td>Click <span>?</span></td>
+							<td>Impression <span>?</span></td>
+							<td>Cost <span>?</span></td>
+							<td style="width:100px;">Spent Today <span>?</span></td>
+							<td>Total Spent <span>?</span></td>
+							<td>Start Date <span>?</span></td>
+							<td>End Date <span>?</span></td>
 						</tr>
 					</thead>
 					<tbody>	
 						<tr>
 							<td><input type="checkbox" /></td>
-							<td>on/off</td>
+							<td>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+								    <label class="onoffswitch-label" for="myonoffswitch">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+							</td>
 							<td class="campaign-name">
 								<a href="">Campaign Name</a>
 							</td>
-							<td><div class="icon-active">Active</div></td>
+							<td><div class="icon-inactive">Inactive</div></td>
 							<td>213</td>
 							<td>21.000</td>
 							<td>1.000</td>
-							<td>15.123</td>
+							<td>15.123 <span class="spent-detail">of- Rp. 100.000</span></td>
 							<td>99.000</td>
-							<td>25-08-2014</td>
+							<td>25-08-2014 <div class="startdate-detail">01:16</div></td>
 							<td>25-09-2014</td>
 						</tr>
-						<tr>
+						<tr class="even">
 							<td><input type="checkbox" /></td>
-							<td>on/off</td>
+							<td>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch1">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+							</td>
 							<td class="campaign-name">
-								<a href="">Campaign Name</a>
+								<a href="">PE-DI-diperkosanapi-0110-75rb-SN-RQ-latif</a>
 							</td>
 							<td><div class="icon-active">Active</div></td>
 							<td>18</td>
 							<td>3.435</td>
 							<td>2.014</td>
-							<td>102</td>
+							<td>102 <span class="spent-detail">of- Rp. 100.000</span></td>
 							<td>434</td>
-							<td>10-03-2014</td>
+							<td>10-03-2014 <div class="startdate-detail">01:16</div></td>
 							<td>Ongoing</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox" /></td>
-							<td>on/off</td>
+							<td>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch2">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+							</td>
 							<td class="campaign-name">
-								<a href="">Campaign Name</a>
+								<a href="">PE-DI-diperkosanapi-0110-75rb-SN-RQ-latif</a>
 							</td>
 							<td><div class="icon-active">Active</div></td>
 							<td>18</td>
 							<td>3.435</td>
 							<td>2.014</td>
-							<td>102</td>
+							<td>102 <span class="spent-detail">of- Rp. 100.000</span></td>
 							<td>434</td>
-							<td>10-03-2014</td>
+							<td>10-03-2014 <div class="startdate-detail">01:16</div></td>
 							<td>Ongoing</td>
 						</tr>
-						<tr>
+						<tr class="even">
 							<td><input type="checkbox" /></td>
-							<td>on/off</td>
+							<td>
+								<div class="onoffswitch">
+								    <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox" id="myonoffswitch3" checked>
+								    <label class="onoffswitch-label" for="myonoffswitch3">
+								        <span class="onoffswitch-inner"></span>
+								        <span class="onoffswitch-switch"></span>
+								    </label>
+								</div>
+							</td>
 							<td class="campaign-name">
-								<a href="">Campaign Name</a>
+								<a href="">PE-DI-diperkosanapi-0110-75rb-SN-RQ-latif</a>
 							</td>
 							<td><div class="icon-active">Active</div></td>
 							<td>18</td>
 							<td>3.435</td>
 							<td>2.014</td>
-							<td>102</td>
+							<td>102 <span class="spent-detail">of- Rp. 100.000</span></td>
 							<td>434</td>
-							<td>10-03-2014</td>
+							<td>10-03-2014 <div class="startdate-detail">01:16</div></td>
 							<td>Ongoing</td>
 						</tr>
 					</tbody>
