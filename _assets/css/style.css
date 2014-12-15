@@ -740,13 +740,13 @@
 	width:530px;
 }
 .report-table table thead{
-	background-color:#d2d2d2;
+	background-color:#8DC6DA;
 
 }
 .report-table table tr td{
 	padding: 2px 2px;
 	font-size:12px;
-	border:thin solid;
+	border:solid 1px #A6A6A6;
 }
 
 .report-about{
