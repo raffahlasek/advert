@@ -932,7 +932,29 @@
 	font-size:12px;
 	border:thin solid;
 }
- /*===================================== FOOTER ====================*/
+ /*================== Create Ads ====================*/
+
+ .kotakkanan2 > .numberCircle{
+	float:left;
+ }
+ .numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    background: #666;
+    color: #fff;
+    text-align: center;
+    font: 18px Arial, sans-serif;
+}
+.ketca{
+	float:left;
+	top:5px;
+	padding:7px;
+}
+
+ /*================== FOOTER ====================*/
  .footer {
  	text-align: center;
  	width: 980px;
