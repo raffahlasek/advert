@@ -149,18 +149,132 @@
 
 			<!--judul page-->
 			<div class="kotakkanan2">
-				<span><img src="_assets\img\createads.jpg" /></span><span class="text-kanan">Create Ads</span>
+				<div>
+					<div class="text-kanan createadds-icon ">Create Ads</div>
+				</div>
+
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					Welcome to RimaAds.<br/>
+					You can <a href="">learn more</a> first. Or start creating your first ad campmaign now. Your work will be saved along the way, in case you want to finish it later.
 				</p>
 			</div>
+
+			<!-- START Select Your Adds -->
 			<div class="kotakkanan2">
-				select your ads
+				<div>
+					<div class="bulletnumbering">
+						<div class="numbering">1</div>
+					</div>
+					<div class="numberingtext">
+						Select your adds
+					</div>
+
+					<!-- START Step 1 (Click to Post Review) -->
+					<div class="createads-banner">
+
+						<!-- START Gambar Click to Website, Post Review, Banner Ads -->
+						<div class="banner-kiri">
+							<div><img src="_assets/img/create-adds-icon1.PNG"></div>
+							<div class="bold">Click to Website</div>
+						</div>
+
+						<div class="banner-tengah">
+							<div><img src="_assets/img/create-adds-icon2.PNG"></div>
+							<div class="bold">Post Review</div>
+						</div>
+
+						<div class="banner-kanan">
+							<div><img src="_assets/img/create-adds-icon3.PNG"></div>
+							<div class="bold">Banner Ads</div>
+						</div>
+						<!-- END Gambar Click to Website, Post Review, Banner Ads -->
+
+						<!-- Step 1 Detail -->
+						<div class="createads-explanation">
+							<div class="createads-explanation-judul">Click to Post Review</div>
+							<div class="createads-explanation-isi">							
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br/><br/>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.							
+							</div>
+						</div>
+
+						<!-- Step 1 Create Ads Button -->
+						<a href=""><div class="btngreen btncmpgn">Create Ads</div></a>
+					</div>
+					<!-- END Step 1 (Click to Post Review) -->
+				</div>
 			</div>
-			<!-- end judul page-->
+			<!-- START Select Your Adds -->
+			
+			<!-- START Setup Ads - Post Review -->
+			<div class="kotakkanan2 kotakkanan2custom">
+				<div>
+					<div class="bulletnumbering">
+						<div class="numbering">2</div>
+					</div>
+					<div class="numberingtext">
+						Setup Ads - <b>Post Review</b>
+					</div>
+
+					<!-- START Step 1 (Click to Post Review) -->
+					<div class="createads-setupads">
+
+						<!-- START Input -->
+						<div>
+							<!-- Insert Link -->
+							<div style="padding-bottom:15px;">
+								<input type="text" placeholder="Insert Link" name="link" style="float:left;"/>
+								<div style="float:left;margin-top: 5px;margin-left:10px;background-image:url('_assets/img/icon-createads-browse.PNG');width:22px;height:22px;">&nbsp;</div>
+							</div>
+							<br/><br/>
+
+							<!-- Upload Image or Video -->
+							<div>
+								<input id="uploadFile" type="text" placeholder="Upload Image or Video" style="float:left;" readonly="readOnly">
+								<div class="fileUpload btn btn-primary" style="float:left;opacity:1;margin-top:10px;margin-top:-1px">
+									<div style="margin-top: 5px;background-image:url('_assets/img/icon-createads-browse.PNG');width:22px;height:22px;">&nbsp;</div>
+								    <input type="file" class="upload" id="uploadBtn" style="position:relative;margin-top:-38px;opacity:0;width:22px;"/>
+								</div>
+								<script type="text/javascript">
+									document.getElementById("uploadBtn").onchange = function () {
+									    document.getElementById("uploadFile").value = this.value;
+									};
+								</script>
+							</div>
+
+							<div class="clear"></div>
+
+							<!-- Choose File type -->
+							<input class="createads-setupads-radio" type="radio" name="upload_file_type" /><div class="icon-image">image</div><br/><br/>
+							<input class="createads-setupads-radio" type="radio" name="upload_file_type" /><div class="icon-video">video</div><br/><br/>
+
+							<!-- Input Header -->
+							<input class="" type="text" placeholder="Header" name="link"/><br/><br/>
+
+							<!-- Input Description -->
+							<textarea placeholder="Add a description"></textarea>
+						</div>
+						<!-- END Input -->
+
+						<!-- Step 1 Detail -->
+						<div class="createads-explanation">
+							<div class="createads-explanation-judul">Click to Post Review</div>
+							<div class="createads-explanation-isi">							
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								<br/><br/>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.							
+							</div>
+						</div>
+
+						<!-- Step 1 Create Ads Button -->
+						<a href=""><div class="btngreen btncmpgn">Create Ads</div></a>
+					</div>
+					<!-- END Step 1 (Click to Post Review) -->
+				</div>
+			</div>
+			<!-- START Select Your Adds -->
+
 		</div>
 		<!-- footer -->
 		<footer class="footer">
