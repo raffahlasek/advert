@@ -723,8 +723,6 @@
 	.kotakkanan2 h3{
 		margin-left:35px;
 	}
-<<<<<<< HEAD
-
 	.bulletnumbering{
 		float: left;
 		margin-top: -8px;
@@ -748,13 +746,12 @@
 .createads-banner{
 	padding-top: 30px;
 	width:inherit;
-=======
+}
 .text-kanan{
 	font-weight:bold;
 	position: absolute;
     left: 480px;
     top: 107px;
->>>>>>> origin/master
 }
 	.banner-kiri{
 		float:left;
