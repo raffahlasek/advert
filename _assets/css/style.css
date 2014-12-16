@@ -392,7 +392,7 @@
 	 }
 	 .mca{
 		background: url('../img/createads.PNG') no-repeat;
-		background-position: 10px 5px;
+		background-position: 10px 5px;	
 	 }
 
 	 .mc{
@@ -705,24 +705,17 @@
 /*======== report =========*/
 
 .kotakkanan2 {
-	padding:20px 10px;
+	padding:40px 10px;;
 	border-bottom:thin solid #d2d2d2;
-	text-align: left;
-	overflow: auto;
 }
+
 	.kotakkanan2 p{
 		margin: 10px 36px;
-		width: 490px;
-		font-size: 14px;
 	}
-	.kotakkanan2 p a{
-		text-decoration: none;
-		color:#198FFB;
-	}
-
 	.kotakkanan2 h3{
 		margin-left:35px;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	.bulletnumbering{
@@ -749,10 +742,13 @@
 	padding-top: 30px;
 	width:inherit;
 =======
+=======
+>>>>>>> parent of de468e7... Create ads Style
 .text-kanan{
 	font-weight:bold;
 	position: absolute;
     left: 480px;
+<<<<<<< HEAD
     top: 107px;
 >>>>>>> origin/master
 }
@@ -789,61 +785,10 @@
 .createads-setupads{
 	padding: 30px 0;
 	text-align: left;
+=======
+    top: 98px;
+>>>>>>> parent of de468e7... Create ads Style
 }
-
-	.createads-setupads input{
-		padding: 5px 5px;
-		width: 250px;
-	}
-
-	.createads-setupads textarea{
-		width:500px;
-		height: 150px;
-		padding: 10px 10px;
-	}
-
-	.createads-setupads .createads-setupads-radio{
-		float: left;
-		padding: 5px 0;
-		width:20px;
-	}
-	.icon-image{
-		float: left;
-		padding-left: 45px;
-		background-image: url("../img/icon-createads-image.PNG");
-		background-repeat: no-repeat;
-		background-position: 0px -2px;		
-		height:29px;
-		color:#A6A6A6;
-	}
-	.icon-video{
-		float: left;
-		padding-left: 45px;
-		background-image: url("../img/icon-createads-video.PNG");
-		background-repeat: no-repeat;
-		background-position: 3px -2px;	
-		height:29px;
-		color:#A6A6A6;
-	}
-
-	.fileUpload {
-		position: relative;
-		overflow: hidden;
-		margin: 10px;
-	}
-
-	.createadds-icon{
-		background-image: url("../img/createads.jpg");
-		background-repeat: no-repeat;
-		height:33px;
-	}
-
-	.text-kanan{
-		padding-left: 35px;
-		padding-top: 10px;
-		font-weight: bold;
-		color:#178DFB;
-	}
 
 	.text-kanan-audience{
 		left: 0px !important;
