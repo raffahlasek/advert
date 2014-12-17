@@ -150,20 +150,18 @@
 
 			<!--judul page-->
 			<div class="kotakkanan2">
-<<<<<<< HEAD
 				<div>
-					<div class="text-kanan createadds-icon ">Create Ads</div>
+					<div class="text-kanan createads-icon ">Create Ads</div>
 				</div>
-
-=======
+<!--
 				<span><img src="_assets\img\createads.jpg" /></span><span class="text-kanan" style="color:#1a8efb;">Create Ads</span>
->>>>>>> origin/master
+-->
 				<p>
 					Welcome to RimaAds.<br/>
 					You can <a href="">learn more</a> first. Or start creating your first ad campmaign now. Your work will be saved along the way, in case you want to finish it later.
 				</p>
 			</div>
-<<<<<<< HEAD
+
 
 			<!-- START Select Your Adds -->
 			<div class="kotakkanan2">
@@ -223,7 +221,7 @@
 						Setup Ads - <b>Post Review</b>
 					</div>
 
-					<!-- START Step 1 (Click to Post Review) -->
+					<!-- START Step 2 (Click to Post Review) -->
 					<div class="createads-setupads">
 
 						<!-- START Input -->
@@ -264,22 +262,48 @@
 						<!-- END Input -->
 
 						<!-- START Desktop View, Smartphone Preview, Apps Preview -->
+						<script type="text/javascript">
+							function expandMenu(menu){
+								var y = document.getElementById("createads-menu-desktoppreview"+menu).style.display;
+
+								if(y == ""){
+									document.getElementById("createads-menu-desktoppreview"+menu).style.display = "none";
+									document.getElementById("menuarrow"+menu).className = "createads-preview-judul-arrowright";
+									// CSS Border bottom
+									if(menu == 3){
+										document.getElementById("lastmenu").style.borderBottom = "";
+
+									}
+								}else{
+									document.getElementById("createads-menu-desktoppreview"+menu).style.display = "";
+									document.getElementById("menuarrow"+menu).className = "createads-preview-judul-arrowdown";
+									// CSS Border bottom
+									if(menu == 3){
+										document.getElementById("lastmenu").style.borderBottom = "solid 1px #D6D6D6";
+
+									}
+								}
+
+								
+							}
+						</script>
 						<div class="createads-preview">
 							<div style="background-image:url('_assets/img/dec-createads.PNG');background-position: 0 1px;width:20px;background-repeat:no-repeat;height:9px;margin-left:20px;"></div>
-							<div class="createads-preview-menu">
+							<div class="createads-preview-menu"  style="border-bottom: solid 1px #D6D6D6;" onclick="expandMenu(1);">
 								<!-- Menu Text -->
-								<div class="createads-preview-judul bold">
+								<div class="createads-preview-judul bold" id="createads-menu1">
 									Desktop Preview
-									<div class="createads-preview-judul-arrowdown"></div> <!-- Panah Kesamping : createads-preview-judul-arrowright -->
+									<div class="createads-preview-judul-arrowright" id="menuarrow1"></div> <!-- Panah Kesamping : createads-preview-judul-arrowright -->
 								</div>
 
-								<!-- START Content Preview -->
-								<div class="createads-container">
+								<!-- START Content Desktop Preview -->
+								<div class="createads-container" id="createads-menu-desktoppreview1" style="display:none;">
 									<div class="createads-content">
-										<div class="createads-content-kiri borderright-grey">
+										<div class="createads-content-kiri">
 											<div class="createads-content-judul">Left Ads</div>
 											<div class="createads-content-preview">
-												<img src="test.jpg">
+												<!--<img src="test.jpg">-->
+												<div style="float: left;padding-top: 10px;padding-right: 10px;width: 60px;height: 60px;background-image:url('_assets/img/Screenshot-121614-030153-PM.jpg');background-repreat:no-repeat:background-position:center;"></div>
 												<div>
 													<div class="createads-content-preview-judul">Sponsored</div>
 													<div class="createads-content-preview-isi bold">Ukraine President: 70% of Russian Troops Have Left</div>
@@ -287,11 +311,12 @@
 											</div>
 										</div>
 
-										<div class="createads-content-tengah borderright-grey">
+										<div class="createads-content-tengah borderright-grey borderleft-grey">
 											<div class="createads-content-judul">Main Ads</div>
 											<div class="createads-content-preview">
 												<div style="width:220px;margin-left:10px;">
-													<img src="tes.jpg" />
+													<!-- <img src="tes.jpg" /> -->
+													<div style="margin-top: 10px;width: 220px;height: 100px;background-image:url('_assets/img/Screenshot-121614-030153-PM.jpg');background-repreat:no-repeat:background-position:center;"></div>
 													<div class="createads-content-preview-tengah">
 														<div class="createads-content-preview-judul" style="margin-top:-10px;">Sponsored</div>
 														<div class="createads-content-preview-isi bold" style="margin-top:-8px;">Pasaf Finansial Asia Gugup Saat Obama Nyatakan Perangi ISIS</div>
@@ -305,7 +330,8 @@
 											<div class="createads-content-judul">Right Ads</div>
 											<div class="createads-content-preview">
 												<div style="width:100px;margin-left:10px;">
-													<img src="tes.jpg" />
+												<!--	<img src="tes.jpg" />	-->
+													<div style="margin-top: 10px;width: 135px;height: 50px;background-image:url('_assets/img/Screenshot-121614-030153-PM.jpg');background-repreat:no-repeat:background-position:center;"></div>
 													<div class="createads-content-preview-kanan">
 														<div class="createads-content-preview-judul" style="margin-top:-10px;font-size:10px;">Sponsored</div>
 														<div class="createads-content-preview-isi bold" style="margin-top:-8px;font-size:10px;">Pasaf Finansial Asia Gugup Saat Obama Nyatakan Perangi ISIS</div>
@@ -314,69 +340,155 @@
 												</div>
 											</div>
 										</div>
+									</div>
+
+									<div style="padding-top:10px;background-color:#FFF;"></div>
+									<div style="border:solid 1px #D6D6D6;"></div>
+									<div style="padding-bottom:10px;background-color:#FFF;"></div>
+
+									<div class="createads-content">
+										<div class="createads-content-kiri">
+											<div class="createads-content-judul">PAGE NEWS</div>
+										</div>
+
+										<div class="createads-content-tengah" style="width: 410px;" >
+											<div class="createads-content-judul" style="opacity:0;">Main Ads</div>
+
+											<div style="box-shadow: 0 2px 10px 1px rgba(0,0,0,.3);font-size:10px;color:#969696;width: 416px;">
+												<div>
+													<div style="float:left;padding: 5px 0 5px 5px;border-bottom: solid 1px #D6D6D6;width:300px;text-align:left;font-weight:bold;">Nasional</div>
+													<div style="position:absolute;margin-left: 300px;">
+														<img src="_assets/img/pageview.png" style="width:116px;height:212px;margin-top: 4px"/>
+													</div>
+													<div class="clear"></div>
+
+													<div style="width:300px;">
+														<div style="float:right;margin-top:5px;">< <b>Berita Berikutnya</b> >&nbsp;&nbsp;</div>
+														<div class="clear"></div>
+														<div style="
+														padding: 10px 0 10px 5px;text-align:left;font-size:14px;color:#000;font-weight:bold;">Pasar Finansial Asia Mulai Gugup Saat Obama Nyatakan Perangi ISIS</div>
+														<div>
+															<div>
+																<div style="float:left;padding-left:5px;">
+																	<div style="font-size:20px;color:red;font-weight:bold;">7.2K</div>
+																	<div style="font-size:8px;">Dilihat</div>
+																</div>
+																<div style="float:left;background-image: url('_assets/img/dec-diagonal.png');background-repeat:no-repeat;width:20px;height:30px;"></div>
+																<div style="float:left;">
+																	<div style="font-size:20px;color:#868686;font-weight:bold;">12:54</div>
+																	<div style="font-size:8px;">24 Des 2014</div>
+																</div>
+															</div>
+															<div style="float:right;margin-right:5px;margin-top:-2px;">
+																<img src="_assets/img/BTNFACEBOOK.png" style="width:40px;height:20px;"/>
+																<img src="_assets/img/BTNGOOGLEPLUS.png" style="width:40px;height:20px;" />
+																<img src="_assets/img/BTNTWITTER.png"  style="width:40px;height:20px;"/>
+															</div>
+															<div class="clear"></div>
+															<!-- ubah background-image div dibawah ini untuk mengubah gambar -->
+															<div style="background-image:url('_assets/img/Screenshot-121614-030153-PM.jpg');width:300px;height:97px;margin-top: 5px;">&nbsp;</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<!-- END Content Desktop Preview -->
+
+							</div>
+
+							<!--START Smartphone Preview -->
+							<div  class="createads-preview-menu" style="border-bottom: solid 1px #D6D6D6;" onclick="expandMenu(2);">
+								<!-- Menu Text -->
+								<div class="createads-preview-judul bold" id="createads-menu2">
+									Smartphone Preview
+									<div class="createads-preview-judul-arrowright" id="menuarrow2"></div> <!-- Panah Kesamping : createads-preview-judul-arrowright -->
+								</div>
+
+								<!-- START Content Smartphone Preview -->
+								<div class="createads-container" id="createads-menu-desktoppreview2" style="display:none;">
+									
+									<div class="createads-content">
+										<div class="createads-content-kiri">
+											<div class="createads-content-judul">PAGE NEWS</div>
+										</div>
+
+										<div style="padding-bottom:10px;padding-top: 40px;overflow:auto;">
+												
+											<div class="createads-content-tengah" style="width: 410px;text-align:left;padding: 0px 0 0px 10px;border:1px solid #A6A6A6;" >
+												<div>
+													<div style="float:left;width:300px;padding: 10px 0 0 0px;">
+														<div style="color:#909DBD;padding-bottom:10px;"><b>Nasional</b> | 16:44 WIB</div>
+														<div><b>Maju Bursa Ketum Demokrat, Pasek Serang Balik Ruhut CS</b></div>
+													</div>
+													<div style="float:right;width:100px;height:100px;background-image:url('_assets/img/Screenshot-121614-030153-PM.jpg');background-position: center;">&nbsp;</div>
+												</div>			
+											</div>
+
+										</div> 
 
 									</div>
 
-									<div style="padding:10px 0;background-color:#FFF;"></div>
-									<div style="padding:10px 0;background-color:#FFF;border-bottom:solid 1px #A6A6A6;"></div>
-									<div style="padding:10px 0;background-color:#FFF;"></div>
+								</div>
+								<!-- END Content Smartphone Preview -->
+								
+							</div>
+							<!--END Smartphone Preview -->
 
-									PAGE VIEW
+							<!--START Apps Preview -->
+							<div  class="createads-preview-menu" id="lastmenu" onclick="expandMenu(3);">
+								<!-- Menu Text -->
+								<div class="createads-preview-judul bold"id="createads-menu3">
+									Apps Preview
+									<div class="createads-preview-judul-arrowright"  id="menuarrow3"></div> <!-- Panah Kesamping : createads-preview-judul-arrowright -->
+								</div>
+
+								<!-- START Content Smartphone Preview -->
+								<div class="createads-container" id="createads-menu-desktoppreview3" style="display:none;">
+									
+									<div class="createads-content">
+										<div class="createads-content-kiri">
+											<div class="createads-content-judul">PAGE NEWS</div>
+										</div>
+
+										<div style="padding-bottom:10px;padding-top: 40px;overflow:auto;">
+												
+											<div class="createads-content-tengah" style="width: 410px;text-align:left;padding: 0px 0 0px 10px;border:1px solid #A6A6A6;" >
+												<div>
+													<div style="float:left;width:300px;padding: 10px 0 0 0px;">
+														<div style="color:#909DBD;padding-bottom:10px;"><b>Nasional</b> | 16:44 WIB</div>
+														<div><b>Maju Bursa Ketum Demokrat, Pasek Serang Balik Ruhut CS</b></div>
+													</div>
+													<div style="float:right;width:100px;height:100px;background-image:url('_assets/img/Screenshot-121614-030153-PM.jpg');background-position: center;">&nbsp;</div>
+												</div>			
+											</div>
+
+										</div> 
+										
+									</div>
 
 								</div>
-								<!-- END Content Preview -->
-
+								<!-- END Content Smartphone Preview -->
+								
 							</div>
-
-							<div class="clear" style="padding: 20px 0;"></div>
-							<div class=" bordertop-grey"></div>
-							<div class="clear" style="padding: 20px 0;"></div>
-
-							<div>
-								Smartphone Preview
+							<!--END Smartphone Preview -->
+								
 							</div>
+							<!--END Apps Preview -->
 
-							<div>
-								Apps Preview
-							</div>
 						</div>
 						<!-- END Desktop View, Smartphone Preview, Apps Preview -->
 
-						<!-- Step 1 Detail -->
-						<div class="createads-explanation">
-							<div class="createads-explanation-judul">Click to Post Review</div>
-							<div class="createads-explanation-isi">							
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								<br/><br/>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.							
-							</div>
-						</div>
 
-						<!-- Step 1 Create Ads Button -->
-						<a href=""><div class="btngreen btncmpgn">Create Ads</div></a>
+						<!-- Step 2 Create Ads Button -->
+						<a href=""><div class="btngreen btncmpgn">Continue</div></a>
 					</div>
-					<!-- END Step 1 (Click to Post Review) -->
+					<!-- END Step 2 (Click to Post Review) -->
 				</div>
 			</div>
-			<!-- START Select Your Adds -->
 
-=======
-			<!--step 1-->
-			<div class="kotakkanan2">
-				<div class="numberCircle">1</div>
-				<div class="ketca">Select Your Ads</div>
-				<div class="clear"></div>
-				
-			</div>
-			<!--end step 1-->
-			<!--step 2-->
-			<div class="kotakkanan2">
-				<div class="numberCircle">2</div>
-				<div class="ketca">Setup Ads - <b>Post Review</b></div>
-				<div class="clear"></div>
-				
-			</div>
-			<!--end step 2-->
 			<!--step 3-->
 			<div class="kotakkanan2">
 				<div class="numberCircle">3</div>
@@ -402,7 +514,7 @@
 			</div>
 			<!--end step 5-->
 			<!-- end judul page-->
->>>>>>> origin/master
+
 		</div>
 		<!-- footer -->
 		<footer class="footer">

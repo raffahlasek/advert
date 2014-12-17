@@ -392,7 +392,7 @@
 	 }
 	 .mca{
 		background: url('../img/createads.PNG') no-repeat;
-		background-position: 10px 5px;
+		background-position: 10px 5px;	
 	 }
 
 	 .mc{
@@ -710,16 +710,14 @@
 	text-align: left;
 	overflow: auto;
 }
+
 	.kotakkanan2 p{
 		margin: 10px 36px;
-		width: 490px;
-		font-size: 14px;
 	}
 	.kotakkanan2 p a{
 		text-decoration: none;
 		color:#198FFB;
 	}
-
 	.kotakkanan2 h3{
 		margin-left:35px;
 	}
@@ -748,11 +746,21 @@
 	width:inherit;
 }
 .text-kanan{
-	font-weight:bold;
-	position: absolute;
-    left: 480px;
-    top: 107px;
+    padding-left: 35px;
+	padding-top: 10px;
+	font-weight: bold;
+	color:#178DFB;
 }
+	.text-kanan-audience{
+			left: 0px !important;
+		}
+
+	.createads-icon{
+		background-image: url("../img/createads.jpg");
+		background-repeat: no-repeat;
+		height:33px;
+	}
+
 	.banner-kiri{
 		float:left;
 		padding-right: 10px;
@@ -763,8 +771,7 @@
 	}
 	.banner-kanan{
 		float: left;
-	}
-
+	}	
 	.banner-kiri img, .banner-tengah img,.banner-kanan img{
 		padding-bottom: 10px;
 	}
@@ -895,7 +902,6 @@
 .createads-container{
 	border-left: 1px solid #d2d2d2;
 	border-right: 1px solid #d2d2d2;
-	border-bottom: 1px solid #d2d2d2;
 }
 .createads-content{
 	background-color: #FFF;
@@ -986,35 +992,15 @@
 .report-table{
 	float:right;
 	width:530px;
-	border:solid 1px #A6A6A6;
 }
 .report-table table thead{
 	background-color:#8DC6DA;
-	font-weight:bold;
+
 }
-	.report-table table thead tr td{
-		padding: 2px 2px;
-		font-size:12px;
-		border:solid 1px #A6A6A6;
-	}
-.report-table .even{
-	background-color: #E6E6E6;
-}
-.report-table table tbody{
-	//font-weight: bold;
-	
-}
-	.report-table table tbody tr td:first-child{
-		padding: 10px 2px;
-	}
-	.report-table table tbody tr td{
-		padding: 5px 2px;
-		font-size: 10px;
-	}
-.report-table .campaign-name a{
-	text-decoration: none;
-	color: blue;
-	font-weight: normal;
+.report-table table tr td{
+	padding: 2px 2px;
+	font-size:12px;
+	border:solid 1px #A6A6A6;
 }
 
 .report-about{
@@ -1200,29 +1186,7 @@
 	font-size:12px;
 	border:thin solid;
 }
- /*================== Create Ads ====================*/
-
- .kotakkanan2 > .numberCircle{
-	float:left;
- }
- .numberCircle {
-    border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-    width: 20px;
-    height: 20px;
-    padding: 4px;
-    background: #666;
-    color: #fff;
-    text-align: center;
-    font: 18px Arial, sans-serif;
-}
-.ketca{
-	float:left;
-	top:5px;
-	padding:7px;
-}
-
- /*================== FOOTER ====================*/
+ /*===================================== FOOTER ====================*/
  .footer {
  	text-align: center;
  	width: 980px;
@@ -1268,6 +1232,9 @@
 }
 .borderright-grey{
 	border-right:  1px solid #A6A6A6;
+}
+.borderleft-grey{
+	border-left:  1px solid #A6A6A6;
 }
 .bordertop-grey{
 	border-top:  1px solid #A6A6A6;
