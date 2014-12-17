@@ -979,7 +979,94 @@
 		border-right:  1px solid #A6A6A6;
 		border-bottom:  1px solid #A6A6A6;
 	}
+
+.createads-step3-kiri{
+	float:left;
+	width:500px;
+}
+	.createads-step3-kiri-text{
+
+	}
+	.createads-step3-kiri-text input{
+		float: left;
+	}
+	.createads-step3-kiri-text label{
+		float: left;
+		padding-right: 10px;
+	}
+	.createads-step3-kiri-text b{
+		font-size: 20px;
+	}
+	.createads-step3-kiri-text p{
+		float: right;
+		padding: 10px 0;
+		width:300px;
+		font-size: 12px;
+		line-height: 120%;
+	}
+	.createads-step3-budgettext{
+		float:left;
+		font-size: 16px;
+		padding: 0 20px 0 35px;
+	}
+	.createads-step3-iconrecomend{
+		float:left;
+		margin-top: -2px;
+		background-image:url('../img/icon-createads-step3.PNG');
+		background-repeat:no-repeat;
+		width:134px;
+		height:23px;
+	}
+.createads-step3-kanan{
+	 right:175px;
+	 position: absolute;
+	 margin-top:-66px;
+	 width:235px;
+	 height: 392px;
+}
+	.createads-step3-kanan-atas{
+		padding:70px 0 0 0px;
+	}
+	.dec-step3{
+		background-image: url("../img/dec-step3.png");
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		margin-left:-9px;
+		padding-left: 20px;
+	}
+		.dec-step3-text{
+			color:#A6A6A6;
+			padding: 10px 0 20px 11px;
+			font-size: 12px;
+			line-height: 150%;
+		}
 	
+	.createads-step3-kanan-bawah{
+		padding-top:20px;
+		margin-left: 10px;
+		width: 220px;
+	}
+	.createads-step3-kanan-bawah span{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.createads-step3-kanan-bawah-days{
+		padding-top:10px;
+		font-size: 20px;
+	}
+.createads-step4 {
+	padding-left: 35px;
+}
+	.createads-step4 span{
+		font-size: 12px;
+		color:#969696;
+	}
+	.createads-step4-content{
+		padding: 20px 0 0 30px;
+	}
+	.createads-step4-bawah{
+		padding: 10px 0 0 55px;
+	}
 .kotakkanan3 {
 	padding:40px 120px;;
 	
@@ -1289,25 +1376,22 @@
 /********** Decoration **********/
 
 .shadow-top{
-/*	width: inherit;
-	height:1px;
-	margin-top:-2px;
-	box-shadow: 1px 3px 6px 2px #E6E6E6;*/
 	background-image: url("../img/shadow1px.PNG");
 	background-repeat: repeat-x;
 }
 .shadow-top img{
-/*	float:right;
-	margin-top:1px;*/
 	float:right;
 }
 .borderright-grey{
 	border-right:  1px solid #A6A6A6;
 }
 .borderleft-grey{
-	border-left:  1px solid #A6A6A6;
+	border-left:  1px solid #d2d2d2;
 }
 .bordertop-grey{
-	border-top:  1px solid #A6A6A6;
+	border-top:  1px solid #d2d2d2;
+}
+.borderbottom-grey{
+	border-bottom:  1px solid #d2d2d2;
 }
 
